@@ -1,0 +1,22 @@
+﻿permalink: /:title 
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+auto: true
+markdown: redcarpet
+pygments: true
+paginate: 10
+title : 李辉道的程序人生
+tagline: 新奇好玩的代码，对编程问题的思考
+author :
+  name : huidaoli
+  email : huidao.li@can2do.com
+  github : huidaoli
+  twitter : huidaoli
+
+production_url : http://huidaoli.github.io
+
+comments :
+  provider : disqus
+  disqus :
+    short_name : huidaoli-code
+
