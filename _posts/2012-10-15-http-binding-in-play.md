@@ -28,15 +28,15 @@ Play的HTTP数据封装机制异常强大和灵活，官方文档中给出的例
 还有一个问题，对于像我这样的懒人，既想使用模型封装，在表单元素的name中又懒得写对象名，这样也可以吗？是的，在Play中，这样也完全没问题。下面请出Play的数据封装辅助类Binder，这里用到的是他的bindBean方法。
 
 bindBean有两个重载方法，其中
-`public static void bindBean(RootParamNode rootParamNode, 
-java.lang.String name,
- java.lang.Object bean)`
+`public static void bindBean(RootParamNode rootParamNode, `
+`java.lang.String name,`
+`java.lang.Object bean)`
 方法和模型对象的`edit()`方法类似，也需要`name`字符串，同样，将`name`设为空字符串也不能实现我们想要的效果。
 
 这里我们要使用另一个
-`public static void bindBean(ParamNode paramNode, 
-java.lang.Object bean, 
-java.lang.annotation.Annotation[] annotations) throws java.lang.Exception` 。
+`public static void bindBean(ParamNode paramNode, `
+`java.lang.Object bean, `
+`java.lang.annotation.Annotation[] annotations) throws java.lang.Exception` 。
 第三个参数注解数组，暂时不知道要怎么用，目前传入一个null值就可以。这个方法可以将直接以属性名命名的HTTP请求参数封装到指定对象中。这么宽泛的限制可能会产生一些无法匹配的问题，所以这个方法会抛异常。
 
 
