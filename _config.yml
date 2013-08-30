@@ -18,5 +18,5 @@ production_url : http://codelife.ecit-it.com
 comments :
   provider : disqus
   disqus :
-    short_name : huidaoli-code
+    short_name : lihuidaocodelife
 
